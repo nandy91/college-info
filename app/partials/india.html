@@ -1,0 +1,15 @@
+<table class="table">
+    <thead>
+      <tr><th colspan="4">Indian Universities List</th></tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="ilist in indiaList">
+        <td>{{$index + 1}}</td>
+        <td>
+          {{ilist.name}}
+        </td>
+        <td>{{ilist.country}}</td>
+        <td><a href={{ilist.web_page}}>Visit the web page</a></td>
+      </tr>
+    </tbody>
+  </table>
